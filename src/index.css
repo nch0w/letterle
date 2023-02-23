@@ -11,3 +11,141 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.App{
+  align-items:center;
+  display:flex;
+  justify-content:center
+}
+#container{
+  width:100%
+}
+#endbit{
+  font-size:15px;
+  padding-bottom:.5em;
+  padding-top:3em;
+  text-align:center
+}
+#result{
+  padding-left:5%;
+  padding-right:5%
+}
+#clip{
+  background-color:#000;
+  margin:0;
+  opacity:0;
+  padding:2vw
+}
+#clip,#share{
+  border-radius:5px;
+  color:#fff;
+  font-weight:700
+}
+#share{
+  background-color:#6aaa64;
+  font-size:7vw;
+  margin-bottom:8px;
+  margin-top:8px;
+  padding:2%
+}
+#endscreen{
+  background-color:#fff;
+  box-shadow:0 0 8px #ccc;
+  flex-direction:column;
+  left:5%;
+  margin:auto;
+  position:fixed;
+  top:250px;
+  width:90%
+}
+#endscreen,#topBit{
+  align-items:center;
+  display:flex;
+  justify-content:center
+}
+#topBit{
+  border-bottom:1px solid grey
+}
+#guesses{
+  flex-direction:column;
+  margin-top:5px
+}
+#guesses,.keyboardRow{
+  align-items:center;
+  display:flex;
+  justify-content:center
+}
+.keyboardRow{
+  flex-direction:row;
+  margin-bottom:2px;
+  margin-top:2px
+}
+.letter{
+  align-items:center;
+  background-color:#d3d6da;
+  border-radius:10px;
+  display:flex;
+  font-size:6vw;
+  font-weight:700;
+  height:12vw;
+  justify-content:center;
+  margin-left:2px;
+  margin-right:2px;
+  width:8.5vw
+}
+.wrong{
+  background-color:#787c7e;
+  color:#fff
+}
+.right{
+  background-color:#6aaa64;
+  color:#fff
+}
+input{
+  border:2px solid #787c7e;
+  box-sizing:border-box
+}
+.guess,input{
+  align-items:center;
+  color:#fff;
+  display:flex;
+  font-size:10vw;
+  font-weight:700;
+  height:18vw;
+  justify-content:center;
+  margin-bottom:5px;
+  width:18vw
+}
+.guess{
+  background-color:#787c7e
+}
+.rightGuess{
+  background-color:#6aaa64
+}
+@media only screen and (min-width:500px){
+  #container{
+      width:500px
+  }
+  .guess,input{
+      font-size:50px;
+      height:90px;
+      width:90px
+  }
+  .letter{
+      font-size:30px;
+      height:60px;
+      width:42.5px
+  }
+  #share{
+      font-size:35px
+  }
+  #endscreen{
+      background-color:#fff;
+      box-shadow:0 0 8px #ccc;
+      left:50%;
+      top:250px;
+      -webkit-transform:translateX(-50%);
+      transform:translateX(-50%);
+      width:450px
+  }
+}
